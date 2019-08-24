@@ -1,11 +1,7 @@
 # 头部菜单，title: link
 menu:
-  主页: https://twitter.com
-  影视: https://twitter.com
-  音乐: https://twitter.com
-  体育: https://twitter.com
-  生活: https://twitter.com
-  杂谈: https://twitter.com
+  归档: /archives 
+  标签: /tags
 
 # 是否显示目录
 TOC: false
