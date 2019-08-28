@@ -104,8 +104,8 @@ body.mu .icon-logo {color:#333;}
 .menu.menu-git {
     position: absolute;
     bottom: 2rem;
-    width: 100%
-    font-size:9px
+    width: 100%;
+    font-size: 9px;
     text-align: center;
 }
 .nav p {color:#999;font-size:12px;position:absolute;width:100%;text-align:center;bottom:30px;}
