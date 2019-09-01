@@ -111,7 +111,7 @@ body.mu .icon-logo {color:#333;}
 .nav p {color:#999;font-size:12px;position:absolute;width:100%;text-align:center;bottom:30px;}
 .nav p a {color:#999;text-decoration:underline;}
 .nav p:first-letter {font-family:sans-serif;}
-#copyright {word-break: keep-all;bottom: 1rem}
+#copyright {word-break: keep-all;}
 #container {padding-bottom:100px;overflow:hidden;position:relative;}
 #container:before {content:'';display:block;width:1px;height:200%;position:absolute;left:50%;background:#eaeaea;top:-50%;z-index:0;}
 #primary {position:relative;}
@@ -197,7 +197,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .post-tags-list-link {color:rgba(44,63,81,0.5);pointer-events:none;}
 
 /* Post or Page content style */
-.content {margin-top:50px;font-size:15px;line-height:2;color:#232323;}
+.content {margin-top:50px;font-size:15px;line-height:2;color:#424242;}
 .content h1 {font-size:39px}
 .content h2 {font-size:32px}
 .content h3 {font-size:26px}
