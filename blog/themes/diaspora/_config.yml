@@ -52,3 +52,12 @@ favicon: /img/favicon.png
 
 # rss文件
 rss: atom.xml
+
+lqip:
+  default_type: potrace
+  potrace:
+    canvas_size:
+      width: 140
+    steps: 2
+    color: '#dedede'
+    background: transparent

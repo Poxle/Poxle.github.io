@@ -65,6 +65,7 @@ body.touch #top {position:relative;}
 .subtitle {color:#666;font-size:14px;margin-top:16px;display:none;}
 .icon-play,.icon-pause,.icon-images {position:absolute;left:70px;color:#666;top:17px;font-size:18px;cursor:pointer;}
 .icon-images {left:100px;}
+.icon-home.image-icon {left: 50px}
 .icon-images.active {color:#EF6D57;}
 .like-icon {position:relative;}
 .icon-like {color:#666;}
@@ -81,8 +82,7 @@ body.touch #top {position:relative;}
 body.touch .scrollbar {display:none;}
 .nav {    position: fixed;
     height: 100vh;
-    width: 30vw;
-    max-width: 475px;
+    width: 20vw;    max-width: 475px;
     right: 0;
     -webkit-box-shadow: -2px 0 12px #a7cbef;
     box-shadow: -2px 0 12px #a7cbef;
@@ -101,9 +101,17 @@ body.mu .icon-logo {color:#333;}
 .menu li {font-size:20px;display:inline-block;margin:0 20px 20px 0;}
 .menu a {color:#666;letter-spacing:1px;}
 .menu a:hover {color:#333;}
+.menu.menu-git {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    font-size: 9px;
+    text-align: center;
+}
 .nav p {color:#999;font-size:12px;position:absolute;width:100%;text-align:center;bottom:30px;}
 .nav p a {color:#999;text-decoration:underline;}
 .nav p:first-letter {font-family:sans-serif;}
+#copyright {word-break: keep-all;}
 #container {padding-bottom:100px;overflow:hidden;position:relative;}
 #container:before {content:'';display:block;width:1px;height:200%;position:absolute;left:50%;background:#eaeaea;top:-50%;z-index:0;}
 #primary {position:relative;}
@@ -122,6 +130,19 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .stuff .likeThis {pointer-events:none;}
 .stuff .icon-like {display:none;}
 .stuff .count {color:#666;}
+.timeline {display:block;max-width:768px;margin:30px auto 40px;padding-left:30px;border-left:3px solid #B0BEC5}
+.timeline .timeline-title::before,.timeline .timeline-subtitle::before,.timeline .timeline-item::before {position:absolute;top:50%;transform:translateY(-50%);border-style:solid;border-color:#B0BEC5;border-radius:50%;background:white;content:"";transition:all .3s ease}
+.timeline-title,.timeline-subtitle,.timeline-item {position:relative;margin-bottom:25px;line-height:32px}
+.timeline-title:hover::before,.timeline-subtitle:hover::before,.timeline-item:hover::before {border-color:#2196F3}
+.timeline-title:hover a,.timeline-subtitle:hover a,.timeline-item:hover a {color:#2196F3}
+.timeline-title {font-size:28px}
+.timeline-title::before {width:12px;height:12px;border-width:4px;left:-42px}
+.timeline-subtitle {font-weight:400;font-size:22px}
+.timeline-subtitle::before {width:11px;height:11px;border-width:3px;left:-40px}
+.timeline-item {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;position:relative;padding-left:100px}
+.timeline-item time {position:absolute;left:0;top:50%;transform:translateY(-50%);display:inline-block;font-weight:300;color:#616161;width:100px}
+.timeline-item a {color:#212121;font-weight:400;transition:all .3s ease}
+.timeline-item::before {width:9px;height:9px;border-width:2px;left:-38px}
 .comment {margin:50px auto;}
 .comment.link,.downloadlink {cursor:pointer;letter-spacing:5px;border:1px solid #dadada;width:170px;text-align:center;color:#666;font-size:14px;padding:10px 0;}
 .comment .gt-comments-null{display:none;}
@@ -176,7 +197,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .post-tags-list-link {color:rgba(44,63,81,0.5);pointer-events:none;}
 
 /* Post or Page content style */
-.content {margin-top:50px;font-size:15px;line-height:2;color:#232323;}
+.content {margin-top:50px;font-size:15px;line-height:2;color:#424242;}
 .content h1 {font-size:39px}
 .content h2 {font-size:32px}
 .content h3 {font-size:26px}
@@ -268,9 +289,39 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   #vibrant div {opacity:0.3;}
   #container {padding-bottom:50px;}
   #post0 {bottom:60px;top:auto;width:70%;left:5%;}
-  .menu {width:80%;margin:160px auto 0;}
-  .menu li {font-size:16px;}
-  #pager {margin:30px 0 0;}
+    .menu {
+        position: relative;
+        width: 80%;
+        margin: 160px auto 0;
+    }
+
+    .menu li {
+        display: block;
+        font-size: 16px;
+    }
+ 
+  #pager {
+    width: 100%;
+    max-width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+  #pager a {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #666;
+    border: 1px solid #dadada;
+    padding: 10px 10px;
+    background: #fff;
+    margin: 0 1rem;
+}
   h1.title {font-size:24px;}
   .tab {display:none;}
   .icon-scan {display:none!important;}

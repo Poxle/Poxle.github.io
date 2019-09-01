@@ -6,8 +6,23 @@
         </li>
         <%}%>
     </ul>
+    <ul  class="menu menu-git">
+    <li><a href="https://github.com/Poxle/" target="_blank"><%- fa_inline('github', {prefix: 'fab'}) %></a></li>
+    <li><a href="https://www.instagram.com/r3aliti/" target="_blank"><%- fa_inline('instagram', {prefix: 'fab'}) %></a></li>
+    <li><a href="https://www.douban.com/people/sognoamore/" target="_blank"><%- fa_inline('film', {prefix: 'fas'}) %></a></li>
+  </ul>
     <p id="copyright">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>.
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>. Powerd By：<%- link_to("http://hexo.io/", "Hexo", {external: true})%><br>
          I Am The Composer of My Own Apocalypse. 
     </p>
 </div>
+
+<div id="header">
+  <div>
+    <a class="image-logo" href="/"></a>
+    <div class="icon-menu switchmenu"></div>
+  </div>
+</div>
+<style>
+  <%- fa_css() %>
+</style>

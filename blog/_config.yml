@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://poxle.github.io/
 root: /
-permalink: :year/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 
 # Directory
@@ -80,3 +80,9 @@ theme: diaspora
 deploy:
   type: git
   repo: git@github.com:Poxle/poxle.github.io.git
+
+lazyload:
+  enable: true
+  # thumbPath: '/images/thumb'
+  # className: #optional e.g. .J-lazyload-img
+  # loadingImg: #optional eg. /images/loading.png

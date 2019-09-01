@@ -1,7 +1,6 @@
 <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="icon-home image-icon" href="javascript:;"></a>
-    <div title="播放/暂停" class="icon-play"></div>
+    <a class="icon-left image-icon" href="javascript:history.go(-1)" data-url="<%= config.url %>"></a>
+    <a class="icon-home image-icon" href="/"></a>
     <h3 class="subtitle"><%- page.title %></h3>
     <div class="social">
         <!--<div class="like-icon">-->
@@ -15,4 +14,5 @@
         </div>
     </div>
     <div class="scrollbar"></div>
+
 </div>
