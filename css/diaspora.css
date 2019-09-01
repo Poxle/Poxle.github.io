@@ -103,7 +103,7 @@ body.mu .icon-logo {color:#333;}
 .menu a:hover {color:#333;}
 .menu.menu-git {
     position: absolute;
-    bottom: 2rem;
+    bottom: 5rem;
     width: 100%;
     font-size: 9px;
     text-align: center;
