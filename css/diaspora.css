@@ -288,8 +288,24 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   #vibrant div {opacity:0.3;}
   #container {padding-bottom:50px;}
   #post0 {bottom:60px;top:auto;width:70%;left:5%;}
-  .menu {width:80%;margin:160px auto 0;}
-  .menu li {font-size:16px;}
+.menu {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.menu li {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+
+.menu a {
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: #333;
   #pager {
     width: 100%;
     max-width: 700px;
