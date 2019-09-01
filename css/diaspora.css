@@ -65,7 +65,7 @@ body.touch #top {position:relative;}
 .subtitle {color:#666;font-size:14px;margin-top:16px;display:none;}
 .icon-play,.icon-pause,.icon-images {position:absolute;left:70px;color:#666;top:17px;font-size:18px;cursor:pointer;}
 .icon-images {left:100px;}
-.icon-home.image-icon {left: 50x}
+.icon-home.image-icon {left: 50px}
 .icon-images.active {color:#EF6D57;}
 .like-icon {position:relative;}
 .icon-like {color:#666;}
